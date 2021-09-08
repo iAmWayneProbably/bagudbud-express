@@ -7,5 +7,5 @@
 	Inserts the whole section to the base.php
  -->
 <?= $this->section('content'); ?>
-	<h1>Home php</h1>
+	<h1 class="text-muted">Home php</h1>
 <?= $this->endSection(); ?>

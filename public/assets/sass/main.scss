@@ -1,0 +1,27 @@
+/*  
+    this must compile in the assets/css
+
+    search for "live sass format" in the settings 
+    then copy this code below
+
+    "format": "compressed",
+	"extensionName": ".min.css",
+	"savePath": "/public/assets/css"
+*/
+
+/* 
+    custom variables comes first 
+
+    import function and variables second
+
+    custom theme colors third
+
+    merge the custom colors fourth
+
+    import bootstrap last 
+*/
+
+// $theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+// import bootstrap sass
+@import "../bootstrap/scss/bootstrap";
