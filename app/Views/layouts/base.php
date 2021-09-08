@@ -50,6 +50,6 @@
 		</div>
 	</nav>
 	<?= $this->renderSection('content') ?>
-	<script src="<?= base_url() ?>/public/assets/bootstrap/dist/js/bootstrap.bundle.js"></script>
+	<script src="<?= base_url() ?>/public/assets/bootstrap/path/js/bootstrap.js"></script>
 </body>
 </html>
