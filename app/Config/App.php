@@ -23,7 +23,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = 'http://localhost/bagudbud/';
+	public $baseURL = 'http://localhost/bagudbud-express-master/';
 
 	/**
 	 * --------------------------------------------------------------------------
