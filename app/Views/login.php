@@ -9,5 +9,5 @@
 <?= $this->section('content'); ?>
 <br>
 <br>
-	<h1 class="text-muted">Login php</h1>
+	
 <?= $this->endSection(); ?>
