@@ -1,0 +1,198 @@
+// import custom variable
+@import "./custom_variables.scss";
+
+body {
+	overflow-x: hidden;
+}
+
+.con {
+	height: 100vh;
+}
+
+.left-container {
+	height: 100vh;
+	width: 70rem;
+
+	.left {
+		margin-left: -0.75rem;
+		width: 30rem;
+		height: 100%;
+	}
+}
+
+/*----------------------------------------------------------------
+
+	left container styles
+
+*/
+
+.left-links {
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+
+	a {
+		text-decoration: none;
+		font-size: map-get($font-sizes, "small");
+	}
+
+	&:last-child {
+		font-size: map-get($font-sizes, "x-small");
+	}
+}
+
+.main-image {
+	margin-left: -30%;
+	max-width: 70%;
+}
+
+/*----------------------------------------------------------------
+
+	right container styles
+
+*/
+
+.right {
+	margin-right: -0.75rem;
+	height: inherit;
+}
+
+.form-container {
+	width: 32rem;
+	// margin-left: 10rem;
+
+	img {
+		max-width: 80%;
+		margin-bottom: 5rem;
+	}
+}
+
+.signin-title {
+	position: relative;
+	font-size: map-get($font-sizes, "x-large");
+	font-weight: 700;
+	width: 6rem;
+
+	&::after {
+		position: absolute;
+		content: "";
+		bottom: -2px;
+		left: 0;
+		width: 70%;
+		height: 3px;
+		background-color: $primary;
+	}
+}
+
+.join-now-container {
+	p {
+		font-weight: 600;
+
+		a {
+			text-decoration: none;
+			position: relative;
+
+			&::after {
+				position: absolute;
+				content: "";
+				bottom: -2px;
+				left: 0;
+				width: 100%;
+				height: 3px;
+				background-color: $primary;
+			}
+		}
+	}
+
+	span {
+		font-weight: 600;
+		a {
+			text-decoration: none;
+			position: relative;
+
+			&::after {
+				position: absolute;
+				content: "";
+				bottom: -2px;
+				left: 0;
+				width: 100%;
+				height: 3px;
+				background-color: $primary;
+			}
+		}
+	}
+}
+
+.submit-btn {
+	border: 2px solid $primary !important;
+	font-weight: 700;
+	font-size: map-get($font-sizes, "medium");
+
+	&:hover {
+		background: none !important;
+	}
+}
+
+/*----------------------------------------------------------------
+
+	or separator
+
+*/
+
+.or-separator {
+	position: relative;
+
+	&:before,
+	&:after {
+		position: absolute;
+		content: "";
+		top: 50%;
+		right: 2rem;
+		width: 5rem;
+		height: 1px;
+		transform: translateY(-50%);
+		background-color: $secondary;
+	}
+
+	&:after {
+		left: 2rem;
+	}
+}
+
+/*----------------------------------------------------------------
+
+	social media buttons
+
+*/
+
+.facebook-img,
+.google-img {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	transform: translateY(-50%);
+	max-width: 2.25rem !important;
+}
+
+.facebook-btn,
+.google-btn {
+	position: relative;
+	font-size: map-get($font-sizes, "xx-small");
+	padding: 1rem 0;
+}
+
+.facebook-btn {
+	&:hover {
+		background-color: #2f6deb;
+		border-color: #2f6deb !important;
+		color: #fff !important;
+	}
+}
+
+.google-btn {
+	&:hover {
+		background-color: #0ecc70;
+		border-color: #0ecc70 !important;
+		color: #fff !important;
+	}
+}
