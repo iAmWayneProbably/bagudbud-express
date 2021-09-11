@@ -34,6 +34,13 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+$myRoutes = array(
+	"login" => "Login::index",
+);
+
+$routes->map($myRoutes);
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
